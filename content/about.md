@@ -1,10 +1,9 @@
 ---
-author: Yihui Xie
-date: "2017-08-06"
-title: About Hugo Ivy
+title: About
 ---
 
-This Hugo theme was ported from [Ivy](https://github.com/dmulholland/ivy), a minimalist website generator built in Python. I don't have time to document this theme. You have to read the source code to understand what it can do. All I can say for now is that I love it. It is clean, minimal, and responsive.
+This is Kang Zihao, without an English name, hope that one day I can find a adaptable name. I was born in Taihe, Jiangxi province. Currently, I am a master's student at [City University of Hong Kong](https://www.cityu.edu.hk/) (<span style="border-bottom:1px dashed;">Thanks for my family's support</span>), majoring in Energy and Environment. I earned my bachelor's degree in Ecology from [South China Agricultural University](https://www.scau.edu.cn/) in 2023. After Graduation, I worked at the BYD as an procurement engineer for one year. It is a not good experience for me. Therefore, I applied for the master degree provided by CityU. Now, I am positive looking for the opportunity to study for a PhD.
 
-I hope you will enjoy this theme. The source code is [on Github](https://github.com/yihui/hugo-ivy). Happy hacking!
-:smile:
+This website is created for me to record the story I am making up. 
+
+**Good luck to me !**

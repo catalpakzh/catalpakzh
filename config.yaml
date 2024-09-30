@@ -28,8 +28,8 @@ menu:
       url: "/index.xml"
 
 params:
-  description: "A Hugo theme ported from the static site generator Ivy."
-  footer: "&copy; [Kang Zihao](https://yihui.org) 2024-{Year} | [Github](https://github.com/yihui)"
+  description: "Welcom to my planet."
+  footer: "&copy; [Kang Zihao](https://kangzihao.netlify.app) 2024-{Year} | [Github](https://github.com/catalpakzh) | [Twitter](https://x.com/Catalpakk)" 
   highlightjsLang: ["latex"]
   highlightjsTheme: "github"
   highlightjsVersion: "11.7.0"
