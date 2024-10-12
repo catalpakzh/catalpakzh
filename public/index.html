@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-US">
 
   <head>
 	<meta name="generator" content="Hugo 0.135.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
@@ -24,9 +24,6 @@
     
     
     
-    <meta name="twitter:image" content="https://simpleicons.org/icons/github.svg">
-    
-    
 
     
 
@@ -38,6 +35,68 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/custom.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/tabsets.min.js" defer></script>
+
+
+<script type="text/javascript">
+MathJax = {
+  options: {
+    
+    
+    
+    skipHtmlTags: { '[-]': ['code'] },
+  },
+  tex: {
+    
+    
+    
+    
+    inlineMath: { '[+]': [['$', '$']] },
+  },
+  startup: {
+    
+    
+    pageReady: function() {
+      var codes = document.getElementsByTagName('code');
+      var to_typeset = [];
+      for (var i = 0; i < codes.length; i++) {
+        var code = codes[i];
+        
+        if (code.childElementCount === 0) {
+          var text = code.textContent.trim();
+          inputs = MathJax.startup.getInputJax();
+          
+          
+          
+          for (var j = 0; j < inputs.length; j++) {
+            
+            
+            if (inputs[j].processStrings) {
+              matches = inputs[j].findMath([text]);
+              if (matches.length == 1 && matches[0].start.n == 0 && matches[0].end.n == text.length) {
+                
+                code.textContent = text;
+                to_typeset.push(code);
+                code.classList.add("math");
+                if (code.parentNode.tagName == "PRE")
+                  code.parentNode.classList.add("math");
+                break;
+              }
+            }
+          }
+        }
+      }
+      
+      MathJax.typesetPromise(to_typeset);
+    },
+  },
+};
+</script>
+
+
+
+
 
   </head>
   <body class="home">
@@ -56,15 +115,15 @@
   <ul>
   
   
-  <li class="active"><a href="/">Home</a></li>
+  <li class="active"><a href="/">HOME</a></li>
   
-  <li><a href="/about/">About</a></li>
+  <li><a href="/en/about/">ABOUT</a></li>
   
-  <li><a href="/categories/">Categories</a></li>
+  <li><a href="/en/">BLOG</a></li>
   
-  <li><a href="/tags/">Tags</a></li>
+  <li><a href="/cn/about/">关于</a></li>
   
-  <li><a href="/index.xml">Subscribe</a></li>
+  <li><a href="/cn/">日志</a></li>
   
   
   </ul>
@@ -75,43 +134,14 @@
     <article class="main">
       <header class="title">
       
-
       </header>
 
+<p>This is Kang Zihao, without an English name, hope that one day I can find a adaptable name. I was born in Taihe, Jiangxi province. Currently, I am a master&rsquo;s student at City University of Hong Kong (Thanks for my family&rsquo;s support), majoring in Energy and Environment. I earned my bachelor&rsquo;s degree in Ecology from South China Agricultural University in 2023. After Graduation, I worked at the BYD as a procurement engineer for one year. This website is created for me to record the story I am making up, and also some random thoughts. I plan to use English to record some technical skills and Chinese to write down my personal thoughts. You can visit the list page of a single section by language, e.g., <a href="/en/">English</a>, or <a href="/cn/">Chinese</a>.</p>
+<p>这里是康梓豪的个人主页，我是江西人，自小一直在江西长居，上大学之后一直都呆在广东，至今没有去过北方。我很喜欢雪，很想有机会能去北方看一场雪，划一次雪。本科毕业于华南农业大学资源环境学院，在比亚迪工作一年之后，在香港城市大学能源与环境学院继续学习。喜欢足球，但是没有踢过一次球，不喜欢对抗类的体育活动。比起高山，更喜欢大海；比起热闹，更喜欢安静；喜欢一个人，但两人或许会更好。闲暇之余，喜欢玩日麻，喜欢读小说，喜欢看影评。</p>
+<img src="/img/sea.jpg" width="100%" height=400  alt="Sea of Busan" />
 
-<p><a href="https://github.com/yihui/hugo-ivy"><img src="https://simpleicons.org/icons/github.svg" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" /></a></p>
-<p>This Hugo theme was ported from <a href="https://github.com/dmulholland/ivy">Ivy</a>, a minimalist website generator built in Python. I don&rsquo;t have time to document it. You have to read the source code to understand what it can do. Like Ivy, this theme is also released under <a href="https://en.wikipedia.org/wiki/Unlicense">the Unlicense</a>, which basically means you just do whatever you want.</p>
-<p>All pages not under the root directory of the website are listed below. You can also visit the list page of a single section, e.g., <a href="/post/">posts</a>, or <a href="/note/">notes</a>.</p>
 
 
-<ul>
-  
-  <li>
-    <span class="date">2020/12/01</span>
-    <a href="/post/2020/12/01/hello-r-markdown/">Hello R Markdown</a>
-  </li>
-  
-  <li>
-    <span class="date">2017/06/14</span>
-    <a href="/note/2017/06/14/another-note/">Another Note on A blogdown Tutorial</a>
-  </li>
-  
-  <li>
-    <span class="date">2017/06/13</span>
-    <a href="/note/2017/06/13/a-quick-note/">A Quick Note on Two Beautiful Websites</a>
-  </li>
-  
-  <li>
-    <span class="date">2016/02/14</span>
-    <a href="/post/2016/02/14/a-plain-markdown-post/">A Plain Markdown Post</a>
-  </li>
-  
-  <li>
-    <span class="date">2015/07/23</span>
-    <a href="/post/2015/07/23/lorem-ipsum/">Lorem Ipsum</a>
-  </li>
-  
-</ul>
 
   <footer>
   
@@ -119,20 +149,100 @@
 
 
 
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/math-code.js" defer></script>
-<script src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.js" defer></script>
+<script async src="//yihui.org/js/center-img.js"></script>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+         
+        #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;  
+    background-color: white;  
+    color: black;  
+    border: 0.5px solid black;  
+    border-radius: 5px;  
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 1000;  
+    transition: background-color 0.3s;  
+}
+
+#backToTop:hover {
+    background-color: #f0f0f0;  
+}
+    </style>
+</head>
+<body>
+
+    
+
+    
+    <button id="backToTop">Back to Top</button>
+
+    <script>
+        
+        const backToTopButton = document.getElementById("backToTop");
+        let timeout; 
+
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+                backToTopButton.disabled = false; 
+
+                
+                clearTimeout(timeout);
+                
+                
+                timeout = setTimeout(function() {
+                    backToTopButton.style.display = "none"; 
+                }, 1500); 
+            } else {
+                backToTopButton.style.display = "none";
+                backToTopButton.disabled = true; 
+            }
+        };
+
+        
+        backToTopButton.onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };    </script>
+</body>
+</html>
+
+
+
+
+
+
 
   
-
   
   <hr>
-  <div class="copyright">© <a href="https://kangzihao.netlify.app">Kang Zihao</a> 2024-2024 | <a href="https://github.com/catalpakzh">Github</a> | <a href="https://x.com/Catalpakk">Twitter</a></div>
+  <div class="copyright">© <a href="https://kangzihao.netlify.app">Kang Zihao</a> 2024-2024 | <a href="https://github.com/catalpakzh">Github</a> | <a href="/index.xml">Subscribe</a></div>
   
   </footer>
   </article>
   
   </body>
 </html>
+
+
+
 

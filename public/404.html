@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-US">
 
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
@@ -32,6 +32,68 @@
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/custom.css" />
 
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/tabsets.min.js" defer></script>
+
+
+<script type="text/javascript">
+MathJax = {
+  options: {
+    
+    
+    
+    skipHtmlTags: { '[-]': ['code'] },
+  },
+  tex: {
+    
+    
+    
+    
+    inlineMath: { '[+]': [['$', '$']] },
+  },
+  startup: {
+    
+    
+    pageReady: function() {
+      var codes = document.getElementsByTagName('code');
+      var to_typeset = [];
+      for (var i = 0; i < codes.length; i++) {
+        var code = codes[i];
+        
+        if (code.childElementCount === 0) {
+          var text = code.textContent.trim();
+          inputs = MathJax.startup.getInputJax();
+          
+          
+          
+          for (var j = 0; j < inputs.length; j++) {
+            
+            
+            if (inputs[j].processStrings) {
+              matches = inputs[j].findMath([text]);
+              if (matches.length == 1 && matches[0].start.n == 0 && matches[0].end.n == text.length) {
+                
+                code.textContent = text;
+                to_typeset.push(code);
+                code.classList.add("math");
+                if (code.parentNode.tagName == "PRE")
+                  code.parentNode.classList.add("math");
+                break;
+              }
+            }
+          }
+        }
+      }
+      
+      MathJax.typesetPromise(to_typeset);
+    },
+  },
+};
+</script>
+
+
+
+
+
   </head>
   <body class="/404.html">
     <header class="masthead">
@@ -49,15 +111,15 @@
   <ul>
   
   
-  <li><a href="/">Home</a></li>
+  <li><a href="/">HOME</a></li>
   
-  <li><a href="/about/">About</a></li>
+  <li><a href="/en/about/">ABOUT</a></li>
   
-  <li><a href="/categories/">Categories</a></li>
+  <li><a href="/en/">BLOG</a></li>
   
-  <li><a href="/tags/">Tags</a></li>
+  <li><a href="/cn/about/">关于</a></li>
   
-  <li><a href="/index.xml">Subscribe</a></li>
+  <li><a href="/cn/">日志</a></li>
   
   
   </ul>
@@ -74,9 +136,7 @@
 
 <hr>
 
-
       </header>
-
 
 404 NOT FOUND
 
@@ -86,16 +146,93 @@
 
 
 
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/math-code.js" defer></script>
-<script src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.js" defer></script>
+<script async src="//yihui.org/js/center-img.js"></script>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+         
+        #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;  
+    background-color: white;  
+    color: black;  
+    border: 0.5px solid black;  
+    border-radius: 5px;  
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 1000;  
+    transition: background-color 0.3s;  
+}
+
+#backToTop:hover {
+    background-color: #f0f0f0;  
+}
+    </style>
+</head>
+<body>
+
+    
+
+    
+    <button id="backToTop">Back to Top</button>
+
+    <script>
+        
+        const backToTopButton = document.getElementById("backToTop");
+        let timeout; 
+
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+                backToTopButton.disabled = false; 
+
+                
+                clearTimeout(timeout);
+                
+                
+                timeout = setTimeout(function() {
+                    backToTopButton.style.display = "none"; 
+                }, 1500); 
+            } else {
+                backToTopButton.style.display = "none";
+                backToTopButton.disabled = true; 
+            }
+        };
+
+        
+        backToTopButton.onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };    </script>
+</body>
+</html>
+
+
+
+
+
+
 
   
-
   
   <hr>
-  <div class="copyright">© <a href="https://kangzihao.netlify.app">Kang Zihao</a> 2024-2024 | <a href="https://github.com/catalpakzh">Github</a> | <a href="https://x.com/Catalpakk">Twitter</a></div>
+  <div class="copyright">© <a href="https://kangzihao.netlify.app">Kang Zihao</a> 2024-2024 | <a href="https://github.com/catalpakzh">Github</a> | <a href="/index.xml">Subscribe</a></div>
   
   </footer>
   </article>

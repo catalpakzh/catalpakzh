@@ -7,7 +7,85 @@
 
 {{ partial "disqus.html" . }}
 
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/math-code.js" defer></script>
-<script src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.js" defer></script>
+<script async src="//yihui.org/js/center-img.js"></script>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 你的样式表 -->
+    <style>
+        /* CSS */
+        #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* 初始隐藏 */
+    background-color: white; /* 按钮背景色为白色 */
+    color: black; /* 字体颜色为黑色 */
+    border: 0.5px solid black; /* 黑色边框 */
+    border-radius: 5px; /* 圆角边框 */
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 1000; /* 确保在最上层 */
+    transition: background-color 0.3s; /* 平滑过渡效果 */
+}
+
+#backToTop:hover {
+    background-color: #f0f0f0; /* 悬停时的背景色 */
+}
+    </style>
+</head>
+<body>
+
+    <!-- 网站内容 -->
+
+    <!-- 回到顶部按钮 -->
+    <button id="backToTop">Back to Top</button>
+
+    <script>
+        // JavaScript 代码
+        const backToTopButton = document.getElementById("backToTop");
+        let timeout; // 用于存储定时器
+
+        window.onscroll = function() {
+            // 显示按钮
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+                backToTopButton.disabled = false; // 启用按钮
+
+                // 清除之前的定时器
+                clearTimeout(timeout);
+                
+                // 设置一个定时器，若在 2 秒内没有滚动，则隐藏按钮
+                timeout = setTimeout(function() {
+                    backToTopButton.style.display = "none"; // 隐藏按钮
+                }, 1500); // 1500 毫秒（1.5 秒）
+            } else {
+                backToTopButton.style.display = "none";
+                backToTopButton.disabled = true; // 禁用按钮
+            }
+        };
+
+        // 点击按钮时滚动回顶部
+        backToTopButton.onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };    </script>
+</body>
+</html>
+
+
+
+
+
+

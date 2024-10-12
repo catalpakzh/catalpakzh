@@ -2,8 +2,12 @@
 title: Home
 ---
 
-[<img src="https://simpleicons.org/icons/github.svg" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/yihui/hugo-ivy)
 
-This Hugo theme was ported from [Ivy](https://github.com/dmulholland/ivy), a minimalist website generator built in Python. I don't have time to document it. You have to read the source code to understand what it can do. Like Ivy, this theme is also released under [the Unlicense](https://en.wikipedia.org/wiki/Unlicense), which basically means you just do whatever you want.
 
-All pages not under the root directory of the website are listed below. You can also visit the list page of a single section, e.g., [posts](/post/), or [notes](/note/).
+
+
+This is Kang Zihao, without an English name, hope that one day I can find a adaptable name. I was born in Taihe, Jiangxi province. Currently, I am a master's student at City University of Hong Kong (Thanks for my family's support), majoring in Energy and Environment. I earned my bachelor's degree in Ecology from South China Agricultural University in 2023. After Graduation, I worked at the BYD as a procurement engineer for one year. This website is created for me to record the story I am making up, and also some random thoughts. I plan to use English to record some technical skills and Chinese to write down my personal thoughts. You can visit the list page of a single section by language, e.g., [English](/en/), or [Chinese](/cn/).
+
+这里是康梓豪的个人主页，我是江西人，自小一直在江西长居，上大学之后一直都呆在广东，至今没有去过北方。我很喜欢雪，很想有机会能去北方看一场雪，划一次雪。本科毕业于华南农业大学资源环境学院，在比亚迪工作一年之后，在香港城市大学能源与环境学院继续学习。喜欢足球，但是没有踢过一次球，不喜欢对抗类的体育活动。比起高山，更喜欢大海；比起热闹，更喜欢安静；喜欢一个人，但两人或许会更好。闲暇之余，喜欢玩日麻，喜欢读小说，喜欢看影评。
+
+<img src="/img/sea.jpg" width="100%" height=400  alt="Sea of Busan" />

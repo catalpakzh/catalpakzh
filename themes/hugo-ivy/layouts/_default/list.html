@@ -2,13 +2,18 @@
 
 {{ .Content }}
 
+{{ if not .IsHome }}
 <ul>
-  {{ range (where (cond .IsHome .Site.RegularPages .Pages) "Section" "!=" "") }}
+  {{ range (where .Pages "Section" "!=" "") }}
   <li>
     <span class="date">{{ .Date.Format "2006/01/02" }}</span>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </li>
   {{ end }}
 </ul>
+{{ end }}
 
 {{ partial "footer.html" . }}
+
+
+

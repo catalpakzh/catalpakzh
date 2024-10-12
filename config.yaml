@@ -1,44 +1,105 @@
-baseurl: /
-languageCode: en-us
+baseurl: https://kangzihao.netlify.app/
+languageCode: "en-US"
 title: Kang Zihao
 theme: "hugo-ivy"
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
-preserveTaxonomyNames: true
+hasCJKLanguage: true
+enableEmoji: true
 footnotereturnlinkcontents: ↩
 
+
 permalinks:
-  note: /note/:year/:month/:day/:slug/
-  post: /post/:year/:month/:day/:slug/
+  cn: /note/:year/:month/:day/:slug/
+  en: /post/:year/:month/:day/:slug/
 
 menu:
   main:
-    - name: "Home"
+    - name: "HOME"
       url: "/"
       weight: 1
-    - name: "About"
-      url: "/about/"
+    - name: "ABOUT"
+      url: "/en/about/"
       weight: 2
-    - name: "Categories"
-      url: "/categories/"
+    - name: "BLOG"
+      url: "/en/"
       weight: 3
-    - name: "Tags"
-      url: "/tags/"
+    - name: "关于"
+      url: "/cn/about/"
       weight: 4
-    - name: "Subscribe"
-      url: "/index.xml"
+    - name: "日志"
+      url: "/cn/"
+      weight: 5
+  en:
+    - name: "HOME"
+      url: "/"
+      weight: 1
+    - name: "ABOUT"
+      url: "/en/about/"
+      weight: 2
+    - name: "BLOG"
+      url: "/en/"
+      weight: 3
+    - name: "VITAE"
+      url: "/en/vitae/"
+      weight: 4
+    - name: "中文"
+      url: "/cn/about"
+      weight: 5
+  cn:
+    - name: "首页"
+      url: "/"
+      weight: 1
+    - name: "关于"
+      url: "/cn/about/"
+      weight: 2
+    - name: "日志"
+      url: "/cn/"
+      weight: 3
+    - name: "简历"
+      url: "/cn/vitae/"
+      weight: 4
+    - name: "EN"
+      url: "/en/about"
+      weight: 5
+
+
 
 params:
   description: "Welcom to my planet."
-  footer: "&copy; [Kang Zihao](https://kangzihao.netlify.app) 2024-{Year} | [Github](https://github.com/catalpakzh) | [Twitter](https://x.com/Catalpakk)" 
-  highlightjsLang: ["latex"]
+  footer: "&copy; [Kang Zihao](https://kangzihao.netlify.app) 2024-{Year} | [Github](https://github.com/catalpakzh) | [Subscribe](/index.xml)"
+  highlightjsLang: ["latex","r", "yaml", "tex"]
   highlightjsTheme: "github"
   highlightjsVersion: "11.7.0"
-  
+  disqusURL: "https://kangzihao.netlify.app/"
+  customJS:
+    - "js/fix-toc.js"
+    - "js/center-img.js"
+    - "js/right-quote.js"
+    - "js/no-highlight.js"
+    - "js/fix-footnote.js"
+    - "js/math-code.js"
+    - "js/external-link.js"
+    - "js/alt-title.js"
+    - "js/header-link.js"
+  author:
+    en: "Kangzihao"
+    cn: "康梓豪"
+
+
+
+
+
 markup:
   highlight:
     codeFences: false
   goldmark:
     renderer:
       unsafe: true
+  tableOfContents:
+    startLevel: 1
 
-enableEmoji: true
+
+
+
+
+
