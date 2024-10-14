@@ -21,15 +21,13 @@ How to add a catalog for each article? I spent some time looking for the answer.
 
 How to use mathematical expressions in `.md` files? Maybe you use R markdown to write an article, you will not counter this question. But if you use markdown, you can find that you can't use mathematical expressions in `.md` files. There are head_custom.html and foot_custom.html files under the <u>layout</u> folder. You can write the `javascript` type document in these two files to achieve some functions. About mathematical expressions, you can read [The Best Way to Support LaTeX Math in Markdown with MathJax](https://yihui.org/en/2018/07/latex-math-markdown/) as a reference.
 
+How to include a picture on the website? Notice the <u>static</u> folder which is used to store the pdf, images, and so on. Put your photos in the static/img, just create a folder to store your photos under the static folder, no matter the name of the fold, but ensure you can find it by yourself. 
+
 How to adjust the size of figures? Using the html script, for example:
 ```
 <img src="/img/sea.jpg" style="max-width:15%;min-width:40px;float:right;" alt="Kang Zihao" />
 ```
-It seems that markdown can't change the size.
-
-How to include a picture on the website? Notice the <u>static</u> folder which is used to store the pdf, images, and so on. Put your photos in the static/img, just create a folder to store your photos under the static folder, no matter the name of the fold, but ensure you can find it by yourself. 
-
-
+It seems that markdown can't change the size. But R Markdown can adjust the size of pictures directly. If you want to create a `.rmd` file in the content folder, I recommend creating a separate folder to store the file. This is because `.rmd` files generate additional files when processed, which can clutter your content folder.
 
 
 Actually, I don't have any knowledge of HTML or CSS before. Therefore, I am still exploring the function of the website. Using AI as an assistant to help can improve your efficiency. Reading other's websites is also a good method to polish your website. But I would say, don't spend too much time adjusting your website appearance. The content is more important.
