@@ -434,17 +434,6 @@ h1.title, .toc-line > a {
 h1.title {
   margin-top: 1em;
 }
-h1.title::before {
-  content: "❧";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 6em;
-  color: var(--border-color);
-  opacity: .5;
-  position: absolute;
-  inset: -.15em 0;
-  z-index: -1;
-}
 .small, .term, .footnotes, li li {
   font-size: .9em;
 }
