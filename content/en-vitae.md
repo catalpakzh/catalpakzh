@@ -31,19 +31,19 @@ slug: "en/vitae"
 - 2019.09 - 2023.06, Bachelor of Ecology, College of Natural Resources and Environment, South China Agricultural University
 
 
-## Reserch Experiences
+## Research Experiences
 
 - Date: 2022.12 - 2023.5
 
   Advisor: Li Ronghua
 
-  Reserch Topics: Effects of Shading on the Community Weighted Mean Value of Functional Traits in Invasive Plant Communities (as my final thesis).
+  Research Topics: Effects of Shading on the Community Weighted Mean Value of Functional Traits in Invasive Plant Communities (as my final thesis).
 
 - Date: 2021.11 - 2021.12
 
   Advisor: Li Ronghua
   
-  Reserch Topics: The Relationship Between Rice Traits and Climate Across Different Provinces.
+  Research Topics: The Relationship Between Rice Traits and Climate Across Different Provinces.
 
 
 ## Hobby

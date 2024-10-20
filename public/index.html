@@ -32,11 +32,16 @@
     
     
 
+
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/custom.css" />
 
 <script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/tabsets.min.js" defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/sidenotes.min.js" defer></script>
+
+
 
 
 <script type="text/javascript">
@@ -158,73 +163,53 @@ MathJax = {
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <link rel="stylesheet" href="styles.css"> 
-    <style>
-         
-        #backToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;  
-    background-color: white;  
-    color: black;  
-    border: 0.5px solid black;  
-    border-radius: 5px;  
-    padding: 10px 12px;
-    font-size: 14px;
-    cursor: pointer;
-    z-index: 1000;  
-    transition: background-color 0.3s;  
-}
-
-#backToTop:hover {
-    background-color: #f0f0f0;  
-}
-    </style>
-</head>
-<body>
-
-    
-
-    
-    <button id="backToTop">Back to Top</button>
-
-    <script>
-        
-        const backToTopButton = document.getElementById("backToTop");
-        let timeout; 
-
-        window.onscroll = function() {
-            
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                backToTopButton.style.display = "block";
-                backToTopButton.disabled = false; 
-
-                
-                clearTimeout(timeout);
-                
-                
-                timeout = setTimeout(function() {
-                    backToTopButton.style.display = "none"; 
-                }, 1500); 
-            } else {
-                backToTopButton.style.display = "none";
-                backToTopButton.disabled = true; 
-            }
-        };
-
-        
-        backToTopButton.onclick = function() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        };    </script>
-</body>
-</html>
+<style>
+    .back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 45px;
+      height: 45px;
+      background-color: none;
+      color: #5aa4e1;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border: none;
+      font-size: 32px;
+    }
+  
+    .back-to-top:hover {
+      background-color: white;
+      color: #5aa4e1;
+      border: 1px solid #5aa4e1;
+    }
+  </style>
+  
+  <div class="back-to-top" onclick="scrollToTop()">
+    &#8593;
+  </div>
+  
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0
+       
+      });
+    }
+  
+    window.addEventListener('scroll', function() {
+      var backToTop = document.querySelector('.back-to-top');
+      if (window.pageYOffset > 300) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+  </script>
 
 
 
